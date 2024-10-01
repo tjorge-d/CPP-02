@@ -32,11 +32,11 @@ Fixed::~Fixed()
 
 //OPERATORS
 
-void	Fixed::operator=(const Fixed &copy)
+Fixed&	Fixed::operator=(const Fixed &copy)
 {
 	//std::cout << "Copy assignment operator called\n";
-	if (this != &copy)
-		_fixedPointVal = copy.getRawBits();
+	_fixedPointVal = copy._fixedPointVal;
+	return (*this);
 }
 
 Fixed&	Fixed::operator++()

@@ -25,7 +25,7 @@ int main(void)
 	for(int i = 0; i < 32; i++)
 	{
 		n.setRawBits((1 << i) << n.getFractionalBits());
-		std::cout << "1^" << i << " = " << n.toInt() << "\n";
+		std::cout << "2^" << i << " = " << n.toInt() << "\n";
 	}
 	return (0);
 }

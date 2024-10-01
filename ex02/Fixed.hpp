@@ -13,7 +13,7 @@ class Fixed
 		Fixed(const Fixed &copy);
 		~Fixed();
 
-		void	operator=(const Fixed &copy);
+		Fixed&	operator=(const Fixed &copy);
 		Fixed&	operator++();
 		Fixed	operator++(int);
 		Fixed&	operator--();
